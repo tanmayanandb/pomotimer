@@ -1,0 +1,330 @@
+:root{
+    font-size: min(0.9vw,16px,1vh);
+    font-family: Roboto, sans-serif;
+}
+
+#timerdiv{
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    
+}
+#timerdivdiv{
+    display: flex;
+    background-color: rgb(106, 30, 85,0.1);
+    height: 30rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    /* padding-left: 5rem;
+    padding-right: 5rem;
+    border-radius: 3rem; */
+}
+#timer{
+    color: white;
+    font-size: 20rem;
+    font-family: monospace;
+    user-select: none;
+    margin: 0;
+}
+
+#formdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-left: 5rem;
+    padding-right: 5rem; */
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-family: monospace;
+    width: 100vw;
+}
+
+.inputs{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+    border-radius: 1rem;
+    border: none;
+    padding: 1rem;
+    width: 6rem;
+    font-size: 2rem;
+
+    font-family: monospace;
+
+    color: white;
+    /* background-color: rgb(59, 28, 50,0.2); */
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 100ms;
+    background-color: rgba(255, 101, 242, 0.05);
+
+
+    
+}
+.inputs:focus{
+    outline: none;
+}
+.inputs:hover{
+    background-color: rgb(166, 77, 121,0.2);
+}
+
+.buttons{
+    padding: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    color: white;
+    background-color: rgba(255, 101, 242, 0.05);
+    border: none;
+    border-radius: 1rem;
+    font-size: 2rem;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    /* opacity: 0.3; */
+    width: 15rem;
+
+    text-align: center;
+
+    transform: scale(1);
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 100ms;
+}
+
+.buttons:hover{
+    transform: scale(1.05);
+    background-color: rgb(166, 77, 121, 0.2);
+    opacity: 1;
+}
+
+body{
+    /* background-color: #1A1A1D; */
+    /* overflow: hidden; */
+    background-image:url("./images/bg1.jpg");
+    background-size:cover;
+    backdrop-filter: brightness(0.3);
+    overflow: hidden;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.buttonstop{
+    margin-bottom: 1rem;
+}
+
+.hidden{
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+
+    transform: translateY(100%);
+
+    transition: transform linear 200ms;
+}
+
+/* *{
+    visibility: visible;
+    opacity: 100;
+    transition: opacity linear 0.2s;
+
+} */
+
+#pomotimerdivdiv{
+    display: flex;
+    background-color: rgba(92, 0, 72, 0.1);
+    height: 30rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    /* padding-left: 5rem;
+    padding-right: 5rem; */
+    /* border-radius: 3rem;  */
+
+    box-shadow: 0px 0px 0px 0px rgb(131, 2, 182);
+
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 200ms;
+}
+
+
+#pomotimer{
+    color: white;
+    font-size: 20rem;
+    font-family: monospace;
+    user-select: none;
+}
+
+#formpomodiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-left: 5rem;
+    padding-right: 5rem; */
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    font-family: Roboto, sans-serif;
+    width: 100vw;
+}
+
+
+#buttondivPomo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    align-self: center;
+    text-align: center;
+}
+
+
+
+#pomocounter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* margin-left: 20rem;
+    margin-right: 20rem; */
+    color: white;
+    background-color: rgba(255, 110, 243, 0.2);
+    border: none;
+    border-radius: 1rem;
+    font-size: 2rem;
+
+    width: 20rem;
+    height: 2rem;
+
+
+    /* transform: scale(1); */
+}
+
+.indicator{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    background-color: white !important;
+    opacity: 1;
+}
+
+.indicator-alpha{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    background-color: rgb(255, 255, 255,0.1);
+}
+
+#settingsicon{
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+}
+
+#settingspage{
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 35rem;
+    width: 50rem;
+    position: absolute;
+    z-index: 1000;
+    top:7rem;
+    right:2rem;
+    /* transform: translate(110%,20%); */
+    border-radius: 5rem;
+
+    /* border: 2px solid #ffffff; */
+
+    display: flex;
+    align-items: left;
+    justify-content: top;
+
+    opacity: 1;
+    transition: transform linear 200ms;
+
+
+
+    /* box-shadow: 0 0 4rem 0 rgb(0, 0, 0, 0.5); */
+
+
+
+}
+
+#settingsinside{
+    align-self: center;
+    transform: translateX(3rem) translateY(-3rem);
+
+    z-index: inherit;
+
+
+}
+
+#settingshead{
+    font-size: 4rem;
+    font-family:Roboto, sans-serif;
+    color: azure;
+    font-weight: bold;
+
+    z-index: inherit;
+}
+
+
+
+.selectbs{
+    display: flex;
+    font-size: 2rem;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    align-items: center;
+    justify-content: left;
+
+    color: beige;
+
+    z-index: inherit;
+}
+
+.settingsInput{
+    height: 2.5rem;
+    width: 10rem;
+    margin-left: 2rem;
+    text-align: center;
+    font-family: monospace;
+    font-size: 2rem;
+
+    background-color: rgba(231, 51, 177, 0.2);
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+
+    color: white;
+    
+    z-index: inherit;
+}
+
+#modal{
+    background-color: rgba(5, 5, 5, 0.8);
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+
+    position: fixed;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+
+}
+
+#settingsbutton{
+    transform: scale(0.8);
+    background-color: rgb(10, 92, 92 , 0.2);
+}

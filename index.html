@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer app</title>
+</head>
+<body>
+    <div id="settingsicon">
+        <button id="settingsbutton" class="buttons">Settings</button>
+    </div>
+    <div id="modal" class="hidden">
+    <div id="settingspage" class="hidden">
+
+            <div id="settingsinside">
+                <p id="settingshead">Settings</p>
+                <div class="selectbs">
+                    <p class="choosetime">Work Minutes:</p>
+                    <input id="selectWork" class="settingsInput">
+                </div>
+                <div class="selectbs">
+                    <p class="choosetime">Break Minutes:</p>
+                    <input id="selectBreak" class="settingsInput">
+                </div>
+                <div class="selectbs">
+                    <p class="choosetime">Long Break Minutes:</p>
+                    <input id="selectLongBreak" class="settingsInput">
+                </div>
+
+        </div>
+    </div>
+    </div>
+
+    <div  id="timerdiv">
+        <div id="selector">
+            <button class="buttons buttonstop" id="timerbutton">Timer</button>
+            <button class="buttons buttonstop" id="pomodorobutton">Pomodoro</button>
+        </div>
+        <div id="simpletimer">
+            <div id="timerdivdiv">
+                <p id="timer">00:00</P>
+            </div>
+            <div id="formdiv">
+                <button type="submit" class="buttons" id="myButton">Start</button>
+                <input type="text" id="myHours" class="inputs">
+                <input type="text" id="myMins" class="inputs">
+                <button type="submit" class="buttons" id="myContinue">Continue</button>
+
+            </div>
+            <div id="buttondiv">
+            </div>
+        </div>
+        <div id="pomodorotimer" class="hidden">
+            <div id="pomotimerdivdiv">
+                <p id="pomotimer">25:00</h1>
+            </div>
+            <div id="formpomodiv">
+                <button type="submit" class="buttons pomobuttons" id="myButtonPomo">Start</button>
+                <span class="buttons pomobuttons" id="breakDisplay">Work</span>
+                <button type="submit" class="buttons pomobuttons" id="myContinuePomo">Continue</button>
+
+            </div>
+                <div id="pomocounterdiv">
+                    <div id="buttondivPomo">
+                        <div id="pomocounter" class="buttons">
+                            <div class="indicator-alpha"></div>
+                            <div class="indicator-alpha"></div>
+                            <div class="indicator-alpha"></div>
+                            <div class="indicator-alpha"></div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+   
+    <link rel="stylesheet" href="style.css"></link>
+    <script async src="index.js"></script>
+
+</body>
+
+</html>
